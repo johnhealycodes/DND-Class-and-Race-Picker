@@ -1,12 +1,18 @@
 //Pick random class and race from DnD 5e
 
-document.querySelector('#submit').addEventListener('click', randomize)
+document.querySelector('#submit').addEventListener('click', pickARace)
 
-function randomize() {
-    const race = Array.from(document.querySelector('.race'), (img))
-    let currentIndex = race.length;
+function pickARace() {
+    // const race = document.querySelector('.race')
+    // const raceArray = Array.from(race)
+    document.querySelector('.race').toggle('none')
+    // console.log(raceArray)
+    // let currentIndex = raceArray.length;
 
-    Math.random(currentIndex)
+    // Math.random(raceArray)
 
-    return currentIndex
+    // return currentIndex
+
 }
+
+pickARace()

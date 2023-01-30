@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/2c75b41efd.css" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/index.css">
     <title>DnD Class/Race Randomizer 🧙🏻‍♂️</title>
 </head>
@@ -12,20 +16,48 @@
         <h1>DnD Class and Race Randomizer!</h1>
         <p>Are you stuck on what to play for your next DnD Campaign? Click the button below and lets mix it up!</p>
     </header>
-    <main>
+    <main class="bg">
         <h3>Let fate decide your next campaign!</h3>
-        <a href="#" id="submit">Let's Get Started!</a>
+        <button id="submit">Let's Get Started!</button>
     </main>
-    <section>
-        <img src="CSS/images/Races/Dragonborn.png" alt="#" class="hidden race">
-        <img src="CSS/images/Races/Dwarf.png" alt="#" class="hidden race">
-        <img src="CSS/images/Races/Elf.png" alt="#" class="hidden race">
-        <img src="CSS/images/Races/Gnome.png" alt="#" class="hidden race">
-        <img src="CSS/images/Races/HalfElf.png" alt="#" class="hidden race">
-        <img src="CSS/images/Races/Halfling.png" alt="#" class="hidden race">
-        <img src="CSS/images/Races/HalfOrc.png" alt="#" class="hidden race">
-        <img src="CSS/images/Races/Human.png" alt="#" class="hidden race">
-        <img src="CSS/images/Races/Tiefling.png" alt="#" class="hidden race">
+    <section id="randomizer">
+        <div id="raceResult">
+            <img src="CSS/images/Races/Dragonborn.png" alt="Dragonborn" class="race">
+            <img src="CSS/images/Races/Dwarf.png" alt="Dwarf" class="race">
+            <img src="CSS/images/Races/Elf.png" alt="Elf" class="race">
+            <img src="CSS/images/Races/Gnome.png" alt="Gnome" class="race">
+            <img src="CSS/images/Races/HalfElf.png" alt="Half Elf" class="race">
+            <img src="CSS/images/Races/Halfling.png" alt="Halfling" class="race">
+            <img src="CSS/images/Races/HalfOrc.png" alt="Half Orc" class="race">
+            <img src="CSS/images/Races/Human.png" alt="Human" class="race">
+            <img src="CSS/images/Races/Tiefling.png" alt="Tiefling" class="race">
+        </div>
+        <div id="classResult">
+            <img src="CSS/images/Classes/barbarian.jpeg" alt="Barbarian">
+            <img src="CSS/images/Classes/Bard.jpg" alt="Bard">
+            <img src="CSS/images/Classes/Cleric.jpg" alt="Cleric">
+            <img src="CSS/images/Classes/Druid.jpg" alt="Druid">
+            <img src="CSS/images/Classes/Fighter.jpg" alt="Fighter">
+            <img src="CSS/images/Classes/Monk.jpg" alt="Monk">
+            <img src="CSS/images/Classes/Paladin.jpg" alt="Paladin">
+            <img src="CSS/images/Classes/Ranger.jpg" alt="Ranger">
+            <img src="CSS/images/Classes/Sorcerer.jpg" alt="Sorcerer">
+            <img src="CSS/images/Classes/Rogue.jpg" alt="Rogue">
+            <img src="CSS/images/Classes/Warlock.jpg" alt="Warlock">
+            <img src="CSS/images/Classes/Wizard.jpg" alt="Wizard">
+        </div>
     </section>
+    <section>
+
+    </section>
+    <footer>
+        <ul class="icons">
+            <li><a href="https://twitter.com/JohnHealyCodes" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/shocklate_/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://github.com/johnhealycodes" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/john-healy-a5b1b61b0/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+    </footer>
+    <script src="https://kit.fontawesome.com/2c75b41efd.js" crossorigin="anonymous"></script>
+    <script src="JS/index.js"></script>
 </body>
 </html>

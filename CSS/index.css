@@ -1,3 +1,8 @@
-.hidden {
+body, header, main, div, section, img, footer {
+    border: solid 1px red;
+    font-family: 'Lora', serif;
+}
+
+.race {
     display: none;
 }
