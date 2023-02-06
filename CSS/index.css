@@ -1,3 +1,12 @@
+/* Color Pallete
+
+#FFFEBD - light yellow
+#F7CE65 - darker yellow
+#930C10 - red wine
+#290000 - dark brown
+#030303 - oblivion
+*/
+
 html{
     font-size: 62.5%;
     font-family: 'Lora', serif;
@@ -6,19 +15,29 @@ body, header, main, div, section, img, footer {
     border: solid 1px red;
     font-size: 1.5rem;
 }
+
+body{
+    background-color: #FFFEBD;
+}
 .top{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.button {
+#submitRace, #submitClass {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 80px;
+  }
+
+
+
+#dragonborn, #dwarf, #elf, #gnome, #halfElf, #halfling, #halfOrc, #human, #tiefling, #barbarian, #bard, #cleric, #druid, #fighter, #monk, #paladin, #ranger, #sorcerer, #rogue, #warlock, #wizard {
+    display: none;
 }
 
-
-#dragonborn, #dwarf, #elf, #gnome, #halfElf, #halfling, #halfOrc, #human, #tiefling {
-    display: none;
+main {
+    display: flex;
 }
