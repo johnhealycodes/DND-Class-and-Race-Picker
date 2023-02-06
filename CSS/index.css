@@ -18,6 +18,7 @@ body, header, main, div, section, img, footer {
     justify-content: center;
 }
 
+
 #dragonborn, #dwarf, #elf, #gnome, #halfElf, #halfling, #halfOrc, #human, #tiefling {
     display: none;
 }
