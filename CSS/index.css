@@ -19,13 +19,19 @@ body, header, main, div, section, img, footer {
 body{
     background-color: #FFFEBD;
 }
+
+section > h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .top{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#submitRace, #submitClass {
+.button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -33,11 +39,34 @@ body{
   }
 
 
-
-#dragonborn, #dwarf, #elf, #gnome, #halfElf, #halfling, #halfOrc, #human, #tiefling, #barbarian, #bard, #cleric, #druid, #fighter, #monk, #paladin, #ranger, #sorcerer, #rogue, #warlock, #wizard {
-    display: none;
+h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+main {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
 }
 
-main {
+img + p {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#dragonborn, #dwarf, #elf, #gnome, #halfElf, #halfling, #halfOrc, #human, #tiefling, #barbarian, #bard, #cleric, #druid, #fighter, #monk, #paladin, #ranger, #sorcerer, #rogue, #warlock, #wizard {
+        display: none;
+    }
+
+.dndClass {
+    height: 180px;
+}
+
+.raceImage {
+    height: 275px;
 }
