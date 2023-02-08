@@ -12,12 +12,11 @@ html{
     font-family: 'Lora', serif;
 }
 body, header, main, div, section, img, footer {
-    border: solid 1px red;
     font-size: 1.5rem;
 }
 
 body{
-    background-color: #FFFEBD;
+    background-image: url('CSS/images/backgroundImage.jpeg');
 }
 
 section > h3{
@@ -53,7 +52,7 @@ main {
 img + p {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: stretch;
     align-items: center;
 }
 
@@ -69,4 +68,16 @@ img + p {
 
 .raceImage {
     height: 275px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
 }
