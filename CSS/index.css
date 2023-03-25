@@ -13,10 +13,12 @@ html{
 }
 body, header, main, div, section, img, footer {
     font-size: 1.5rem;
+    color: #FFFEBD;
 }
 
 body{
-    background-image: url('CSS/images/backgroundImage.jpeg');
+    background-image: url('../../CSS/images/backgroundImage.jpeg');
+    background-size: cover;
 }
 
 section > h3{
@@ -58,9 +60,6 @@ img + p {
 
 
 
-#dragonborn, #dwarf, #elf, #gnome, #halfElf, #halfling, #halfOrc, #human, #tiefling, #barbarian, #bard, #cleric, #druid, #fighter, #monk, #paladin, #ranger, #sorcerer, #rogue, #warlock, #wizard {
-        display: none;
-    }
 
 .dndClass {
     height: 180px;

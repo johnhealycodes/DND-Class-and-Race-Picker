@@ -2,138 +2,87 @@
 //2 buttons that when pressed randomize your class/race in DnD
 // const race = document.querySelector('.raceResult')
 // const dndClass = document.querySelector('.classResult')
-document.querySelector('#submitRace').addEventListener('click', pickARace)
-document.querySelector('#submitClass').addEventListener('click', pickAClass)
-
-const race = Array(
-    document.querySelector('#dragonborn'),
-    document.querySelector('#dwarf'),
-    document.querySelector('#elf'),
-    document.querySelector('#gnome'),
-    document.querySelector('#halfElf'),
-    document.querySelector('#halfling'),
-    document.querySelector('#halfOrc'),
-    document.querySelector('#human'),
-    document.querySelector('#tiefling')
-)
-
-    
-
-function pickARace() {
-
-    
-    let raceIndex = race.length - 1
-    let randomIndex = [Math.floor(Math.random() * raceIndex)]
-
-    document.querySelector('#dragonborn').style.display = 'none'
-    document.querySelector('#dwarf').style.display = 'none'
-    document.querySelector('#elf').style.display = 'none'
-    document.querySelector('#gnome').style.display = 'none'
-    document.querySelector('#halfElf').style.display = 'none'
-    document.querySelector('#halfling').style.display = 'none'
-    document.querySelector('#halfOrc').style.display = 'none'
-    document.querySelector('#human').style.display = 'none'
-    document.querySelector('#tiefling').style.display = 'none'        
+document.querySelector('#submitRace').addEventListener('click', adventureStart)
+// document.querySelector('#submitClass').addEventListener('click', pickAClass)
 
 
     
-    if (randomIndex == 0){
-        console.log(race[0])
-        document.querySelector('#dragonborn').style.display = 'block'
-    } else if (randomIndex == 1){
-        console.log(race[1])
-        document.querySelector('#dwarf').style.display = 'block'
-    } else if (randomIndex == 2){
-        console.log(race[2])
-        document.querySelector('#elf').style.display = 'block'
-    } else if (randomIndex == 3){
-        console.log(race[3])
-        document.querySelector('#gnome').style.display = 'block'
-    } else if (randomIndex == 4){
-        console.log(race[4])
-        document.querySelector('#halfElf').style.display = 'block'
-    } else if (randomIndex == 5){
-        console.log(race[5])
-        document.querySelector('#halfling').style.display = 'block'
-    } else if (randomIndex == 6){
-        console.log(race[6])
-        document.querySelector('#halfOrc').style.display = 'block'
-    } else if (randomIndex == 7){
-        console.log(race[7])
-        document.querySelector('#human').style.display = 'block'
+
+function adventureStart() {
+
+    let randomRace = [Math.floor(Math.random() * 8)]
+
+    
+    if (randomRace == 0){
+        document.querySelector('.raceImage').src = 'CSS/images/Races/Dragonborn.png'
+        document.querySelector('#raceName').innerText = 'Dragonborn'
+    } else if (randomRace == 1){
+        document.querySelector('.raceImage').src = 'CSS/images/Races/Dwarf.png'
+        document.querySelector('#raceName').innerText = 'Dwarf'
+    } else if (randomRace == 2){
+        document.querySelector('.raceImage').src = 'CSS/images/Races/Elf.png'
+        document.querySelector('#raceName').innerText = 'Elf'
+    } else if (randomRace == 3){
+        document.querySelector('.raceImage').src = 'CSS/images/Races/Gnome.png'
+        document.querySelector('#raceName').innerText = 'Gnome'
+    } else if (randomRace == 4){
+        document.querySelector('.raceImage').src = 'CSS/images/Races/HalfElf.png'
+        document.querySelector('#raceName').innerText = 'Half Elf'
+    } else if (randomRace == 5){
+        document.querySelector('.raceImage').src = 'CSS/images/Races/Halfling.png'
+        document.querySelector('#raceName').innerText = 'Halfling'
+    } else if (randomRace == 6){
+        document.querySelector('.raceImage').src = 'CSS/images/Races/HalfOrc.png'
+        document.querySelector('#raceName').innerText = 'Half Orc'
+    } else if (randomRace == 7){
+        document.querySelector('.raceImage').src = 'CSS/images/Races/Human.png'
+        document.querySelector('#raceName').innerText = 'Human'
     } else {
-        console.log(race[8])
-        document.querySelector('#tiefling').style.display = 'block'        
+        document.querySelector('.raceImage').src = 'CSS/images/Races/Tiefling.png'   
+        document.querySelector('#raceName').innerText = 'Tiefling'     
     }
-}
 
-const dndClass = Array(
-    document.querySelector('#barbarian'),
-    document.querySelector('#bard'),
-    document.querySelector('#cleric'),
-    document.querySelector('#druid'),
-    document.querySelector('#fighter'),
-    document.querySelector('#monk'),
-    document.querySelector('#paladin'),
-    document.querySelector('#ranger'),
-    document.querySelector('#sorcerer'),
-    document.querySelector('#warlock'),
-    document.querySelector('#wizard')
-)
-
-
-function pickAClass() {
-    let classIndex = race.length - 1
-    let randomIndex = [Math.floor(Math.random() * classIndex)]
-
-    document.querySelector('#barbarian').style.display = 'none'
-    document.querySelector('#bard').style.display = 'none'
-    document.querySelector('#cleric').style.display = 'none'
-    document.querySelector('#druid').style.display = 'none'
-    document.querySelector('#fighter').style.display = 'none'
-    document.querySelector('#monk').style.display = 'none'
-    document.querySelector('#paladin').style.display = 'none'
-    document.querySelector('#ranger').style.display = 'none'
-    document.querySelector('#sorcerer').style.display = 'none'
-    document.querySelector('#warlock').style.display = 'none'
-    document.querySelector('#wizard').style.display = 'none'
-       
+        
+    let randomIndex = [Math.floor(Math.random() * 11)]
 
 
     
     if (randomIndex == 0){
-        console.log(dndClass[0])
-        document.querySelector('#barbarian').style.display = 'block'
+        document.querySelector('.dndClass').src = "CSS/images/Classes/barbarian.jpeg"
+        document.querySelector('#className').innerText = 'Barbarian'
     } else if (randomIndex == 1){
-        console.log(dndClass[1])
-        document.querySelector('#bard').style.display = 'block'
+        document.querySelector('.dndClass').src = "CSS/images/Classes/Bard.jpg"
+        document.querySelector('#className').innerText = 'Bard'
     } else if (randomIndex == 2){
-        console.log(dndClass[2])
-        document.querySelector('#cleric').style.display = 'block'
+        document.querySelector('.dndClass').src = "CSS/images/Classes/Cleric.jpg"
+        document.querySelector('#className').innerText = 'Cleric'
     } else if (randomIndex == 3){
-        console.log(dndClass[3])
-        document.querySelector('#druid').style.display = 'block'
+        document.querySelector('.dndClass').src = "CSS/images/Classes/Druid.jpg"
+        document.querySelector('#className').innerText = 'Druid'
     } else if (randomIndex == 4){
-        console.log(dndClass[4])
-        document.querySelector('#fighter').style.display = 'block'
+        document.querySelector('.dndClass').src = "CSS/images/Classes/Fighter.jpg"
+        document.querySelector('#className').innerText = 'Fighter'
     } else if (randomIndex == 5){
-        console.log(dndClass[5])
-        document.querySelector('#monk').style.display = 'block'
+        document.querySelector('.dndClass').src = "CSS/images/Classes/Monk.jpg"
+        document.querySelector('#className').innerText = 'Monk'
     } else if (randomIndex == 6){
-        console.log(dndClass[6])
-        document.querySelector('#paladin').style.display = 'block'
+        document.querySelector('.dndClass').src = "CSS/images/Classes/Paladin.jpg"
+        document.querySelector('#className').innerText = 'Paladin'
     } else if (randomIndex == 7){
-        console.log(dndClass[7])
-        document.querySelector('#ranger').style.display = 'block'
+        document.querySelector('.dndClass').src = "CSS/images/Classes/Ranger.jpg"
+        document.querySelector('#className').innerText = 'Ranger'
     } else if (randomIndex == 8){
-        console.log(dndClass[8])
-        document.querySelector('#sorcerer').style.display = 'block'        
+        document.querySelector('.dndClass').src = "CSS/images/Classes/Sorcerer.jpg"   
+        document.querySelector('#className').innerText = 'Sorcerer'     
     } else if (randomIndex == 9){
-        console.log(dndClass[9])
-        document.querySelector('#warlock').style.display = 'block'        
+        document.querySelector('.dndClass').src = "CSS/images/Classes/Rogue.jpg"  
+        document.querySelector('#className').innerText = 'Rogue'      
+    } else if (randomIndex == 10){
+        document.querySelector('.dndClass').src = "CSS/images/Classes/Warlock.jpg"  
+        document.querySelector('#className').innerText = 'Warlock'
     } else {
-        console.log(dndClass[10])
-        document.querySelector('#wizard').style.display = 'block'        
+        document.querySelector('.dndClass').src = "CSS/images/Classes/Wizard.jpg"  
+        document.querySelector('#className').innerText = 'Wizard'      
     }
 
 }

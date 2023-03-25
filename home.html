@@ -13,107 +13,29 @@
 </head>
 <body>
     <header class="top">
-        <h1>Classify - DnD Class and Race Randomizer!</h1>
-        <p>Are you stuck on what to play for your next DnD Campaign? Click the button below and lets mix it up!</p>
+        <h1>Classify</h1>
+        <h2>DnD Class and Race Randomizer!</h2>
     </header>
     <section>
-        <h3>Let fate decide your next campaign!</h3>
-        <div class="button">
-            <button id="submitRace">Your next Character's race!</button>
-            <button id="submitClass">Your next Character's class!</button>
-        </div>
+        <!-- <p>Are you stuck on what to play for your next DnD Campaign? Click the button below and lets mix it up!</p> -->
+        <h3>Are you stuck on what to play for your next DnD Campaign?</h3>
+        <h3>Click the button & let FATE decide your next campaign!</h3>
     </section>
-    <h3>Your next adventure begins with a...</h3>
     <main>
-        <section id="raceRandomizer">
-            <div class="raceResult" id="dragonborn">
-                <img src="CSS/images/Races/Dragonborn.png" alt="Dragonborn" class="raceImage">
-                <p>Dragonborn</p>
+        <section>
+            <div class="raceResult">
+                <img src="" alt="" class="raceImage">
+                <p id="raceName"></p>
             </div>
-            <div class="raceResult" id="dwarf">
-                <img src="CSS/images/Races/Dwarf.png" alt="Dwarf" class="raceImage">
-                <p>Dwarf</p>
-            </div>
-            <div class="raceResult" id="elf">
-                <img src="CSS/images/Races/Elf.png" alt="Elf" class="raceImage">
-                <p>Elf</p>
-            </div>
-            <div class="raceResult" id="gnome">
-                <img src="CSS/images/Races/Gnome.png" alt="Gnome" class="raceImage">
-                <p>Gnome</p>
-            </div>
-            <div class="raceResult" id="halfElf">
-                <img src="CSS/images/Races/HalfElf.png" alt="Half Elf" class="raceImage">
-                <p>HalfElf</p>
-            </div>
-            <div class="raceResult" id="halfling">
-                <img src="CSS/images/Races/Halfling.png" alt="Halfling" class="raceImage">
-                <p>Halfling</p>
-            </div>
-            <div class="raceResult" id="halfOrc">
-                <img src="CSS/images/Races/HalfOrc.png" alt="Half Orc" class="raceImage">
-                <p>Half Orc</p>
-            </div>
-            <div class="raceResult" id="human">
-                <img src="CSS/images/Races/Human.png" alt="Human" class="raceImage">
-                <p>Human</p>
-            </div>
-            <div class="raceResult" id="tiefling">
-                <img src="CSS/images/Races/Tiefling.png" alt="Tiefling" class="raceImage">
-                <p>Tiefling</p>
-            </div>
-        </section>
 
-        <section id="classRandomizer">
-            <div class="classResult" id="barbarian">
-                <img src="CSS/images/Classes/barbarian.jpeg" class="dndClass" alt="Barbarian">
-                <p>Barbarian</p>
-            </div>
-            <div class="classResult" id="bard">
-                <img src="CSS/images/Classes/Bard.jpg" class="dndClass" alt="Bard">
-                <p>Bard</p>
-            </div>
-            <div class="classResult" id="cleric">
-                <img src="CSS/images/Classes/Cleric.jpg" class="dndClass" alt="Cleric">
-                <p>Cleric</p>
-            </div>
-            <div class="classResult" id="druid">
-                <img src="CSS/images/Classes/Druid.jpg" class="dndClass" alt="Druid">
-                <p>Druid</p>
-            </div>
-            <div class="classResult" id="fighter">
-                <img src="CSS/images/Classes/Fighter.jpg" class="dndClass" alt="Fighter">
-                <p>Fighter</p>
-            </div>
-            <div class="classResult" id="monk">
-                <img src="CSS/images/Classes/Monk.jpg" class="dndClass" alt="Monk">
-                <p>Monk</p>
-            </div>
-            <div class="classResult" id="paladin">
-                <img src="CSS/images/Classes/Paladin.jpg" class="dndClass" alt="Paladin">
-                <p>Paladin</p>
-            </div>
-            <div class="classResult" id="ranger">
-                <img src="CSS/images/Classes/Ranger.jpg" class="dndClass" alt="Ranger">
-                <p>Ranger</p>
-            </div>
-            <div class="classResult" id="sorcerer">
-                <img src="CSS/images/Classes/Sorcerer.jpg" class="dndClass" alt="Sorcerer">
-                <p>Sorcerer</p>
-            </div>
-            <div class="classResult" id="rogue">
-                <img src="CSS/images/Classes/Rogue.jpg" class="dndClass" alt="Rogue">
-                <p>Rogue</p>
-            </div>
-            <div class="classResult" id="warlock">
-                <img src="CSS/images/Classes/Warlock.jpg" class="dndClass" alt="Warlock">
-                <p>Warlock</p>
-            </div>
-            <div class="classResult" id="wizard">
-                <img src="CSS/images/Classes/Wizard.jpg" class="dndClass" alt="Wizard">
-                <p>Wizard</p>
+            <div class="classResult">
+                <img src="" class="dndClass" alt="">
+                <p id="className"></p>
             </div>
         </section>
+        <div class="button">
+            <button id="submitRace">Your next adventure begins with a...</button>
+        </div>
     </main>
 
         <footer>
@@ -123,7 +45,9 @@
                 <li><a href="https://github.com/johnhealycodes" target="_blank">GitHub <i class="fa-brands fa-github"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/john-healy-a5b1b61b0/" target="_blank">LinkedIn <i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
-            <p>JohnHealyCodes</p>
+            <div>
+                <p>JohnHealyCodes</p>
+            </div>
             </footer>
         <script src="https://kit.fontawesome.com/2c75b41efd.js" crossorigin="anonymous"></script>
         <script src="JS/index.js"></script>
