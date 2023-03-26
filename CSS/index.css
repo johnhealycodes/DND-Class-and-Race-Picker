@@ -13,19 +13,43 @@ html{
 }
 body, header, main, div, section, img, footer {
     font-size: 1.5rem;
-    color: #FFFEBD;
+    color: white;
 }
 
 body{
-    background-image: url('../../CSS/images/backgroundImage.jpeg');
+    background-image: url('../../CSS/images/rgbbackground.jpeg');
     background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-section > h3{
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+header, footer {
+    width: 70%;
+}
+
+.subHeader {
+    color: white;
+}
+
+h1 + h2 {
+    font-weight: 600;
+}
+
+.subHeader > h3{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .top{
     display: flex;
     flex-direction: column;
@@ -40,43 +64,105 @@ section > h3{
   }
 
 
-h3 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-main {
+.adventure {
      display: flex;
      flex-direction: row;
      justify-content: center;
 }
 
-img + p {
+/* Image generator */
+
+.adventure {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 30%;
+}
+
+p {
+    color:ivory;
+    font-size: 2rem;
+    font-weight: 600;
+    align-self: center;
+}
+
+#className {
+    justify-self: end;
+}
+
+.raceResult, .classResult {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
-    align-items: center;
-}
-
-
-
-
-.dndClass {
-    height: 180px;
-}
-
-.raceImage {
-    height: 275px;
-}
-
-footer {
-    display: flex;
     justify-content: center;
 }
 
+
+.dndClass {
+    height: 200px;
+}
+
+.raceImage {
+    height: 400px;
+}
+
+footer {
+    height: 5%;
+}
+
+
 ul {
     display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+li {
+    display: flex;
+    width: 10%;
+    justify-content: space-around;
     list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    transition: 400ms;
+    color: #930C10;
+    font-size: 4rem;
+}
+
+a:hover{
+    transition: 400ms;
+    color: #290000;
+}
+
+.tagline {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.button{
+    margin-bottom: 40px;
+}
+
+
+#start {
+    transition: 500ms;
+    background-color: #030303;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px lightblue;
+}
+
+#start:hover{
+    transition: 500ms;
+    background-color: darkblue;
+    box-shadow: 0px 0px 10px 5px lightblue;
+}
+
+#tag {
+    font-size: 1.5rem;
+    color: white;
 }
