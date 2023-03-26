@@ -133,7 +133,7 @@ a {
 
 a:hover{
     transition: 400ms;
-    color: #290000;
+    color: lightblue;
 }
 
 .tagline {
