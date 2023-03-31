@@ -1,9 +1,6 @@
 //Pick random class and race from DnD 5e
-//2 buttons that when pressed randomize your class/race in DnD
 document.querySelector('#start').addEventListener('click', adventureStart)
 
-
-    
 
 function adventureStart() {
 
@@ -83,4 +80,3 @@ function adventureStart() {
     }
 
 }
-
