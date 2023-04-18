@@ -17,7 +17,7 @@ body, header, main, div, section, img, footer {
 }
 
 body{
-    background-image: url('../../CSS/images/rgbbackground.jpeg');
+    background-image: url('/images/rgbbackground.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
